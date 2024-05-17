@@ -42,7 +42,7 @@ int main()
         printf("Sum of Row[%d] = %d\n",a,sumr);
     }
     
-    printf("\nEnter Column Number = ");
+    printf("Enter Column Number = ");
     scanf("%d",&b);
     int bc=b-1;
     for (int i = 0; i < r; i++)
