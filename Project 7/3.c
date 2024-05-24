@@ -13,5 +13,12 @@ int main()
     int n;
     printf("Enter a number = ");
     scanf("%d", &n);
-    printf("Factorial of %d is = %d",n,calculateFactorial(n));
+    if(n<0)
+    {
+        printf("Number is Negative\n");
+    }
+    else
+    {
+        printf("Factorial of %d is = %d",n,calculateFactorial(n));
+    }
 }
