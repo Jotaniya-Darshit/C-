@@ -9,7 +9,7 @@ int main()
     char *p2=&b;
     float *p3=&pi;
 
-    printf("%p = %d\n",p1,*p1);
-    printf("%u = %c\n",p2,*p2);
-    printf("%x = %.2f\n",p3,*p3);
+    printf("address = %p \t value = %d\n",p1,*p1);
+    printf("address = %u \t value = %c\n",p2,*p2);
+    printf("address = %x \t value = %.2f\n",p3,*p3);
 }
