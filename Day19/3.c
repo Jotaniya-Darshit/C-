@@ -10,6 +10,14 @@ int main()
     float *p3=&pi;
 
     printf("address = %p \t value = %d\n",p1,*p1);
+    printf("address = %p \t value = %c\n",p2,*p2);
+    printf("address = %p \t value = %.2f\n\n",p3,*p3);
+
+    printf("address = %u \t value = %d\n",p1,*p1);
     printf("address = %u \t value = %c\n",p2,*p2);
-    printf("address = %x \t value = %.2f\n",p3,*p3);
+    printf("address = %u \t value = %.2f\n\n",p3,*p3);
+
+    printf("address = %x \t value = %d\n",p1,*p1);
+    printf("address = %x \t value = %c\n",p2,*p2);
+    printf("address = %x \t value = %.2f\n\n",p3,*p3);
 }
