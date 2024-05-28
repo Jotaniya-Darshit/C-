@@ -15,6 +15,16 @@
       box-sizing: border-box;
       font-family:'Times New Roman', Times, serif;
     }
+.counter {
+  display: table-cell;
+  margin:1.5%;
+  font-size:50px;
+  background-color: #FF6F6F;
+  width:200px;
+  border-radius: 50%;
+  height:200px;
+  vertical-align: middle;
+}
   </style>
   <body>
     <div class="container-fluid">
@@ -74,10 +84,41 @@
           </div>
         </div>
         <div class="col-lg-6">
-
+          <div class="counter" data-count="150">100</div>
+<div class="counter" data-count="85">0</div>
+<div class="counter" data-count="2200">0</div>
         </div>
       </div>
     </div>
 
   </body>
 </html>
+<script>
+  $("document").ready(function(
+    $('.counter').each(function() {
+  var $this = $(this),
+      countTo = $this.attr('data-count');
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 8000,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+  
+  
+
+});
+  ))   
+</script>
