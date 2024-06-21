@@ -1,0 +1,1 @@
+Calculate a mod b which, for positive numbers, is the remainder of a divided by b in a division problem. The modulo operation finds the remainder, so if you were dividing a by b and there was a remainder of n, you would say a mod b = n
